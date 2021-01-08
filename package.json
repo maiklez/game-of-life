@@ -1,0 +1,33 @@
+{
+  "name": "game-life",
+  "version": "1.0.0",
+  "description": "Game of Life",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "test": "jest --watchAll",
+    "test:coverage": "jest --collectCoverage --runInBand --forceExit"
+  },
+  "author": "Miguel Perez Freire",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jest": "^24.0.23",
+    "@types/node": "^12.12.17",
+    "eslint": "^5.16.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.17.2",
+    "eslint-plugin-jest": "^22.2.1",
+    "eslint-plugin-node": "^8.0.1",
+    "jest": "^26.6.3"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "testPathIgnorePatterns": [
+      "/node_modules/"
+    ],
+    "verbose": true
+  },
+  "dependencies": {
+    "@hapi/joi": "^15.1.1"
+  }
+}
